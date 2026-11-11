@@ -7,7 +7,7 @@
 <meta name="description" content="Únete a la clase en vivo gratuita de Meli: aprende a crear y vender tu primer producto digital con ayuda de la IA. Jueves 26 de noviembre, 7:00 PM hora Colombia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,43 +24,73 @@
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-texture" aria-hidden="true"></div>
+    <div class="hero-top-hatch" aria-hidden="true"></div>
+    <div class="hero-chevrons hero-chevrons-left" aria-hidden="true">
+      <svg viewBox="0 0 220 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 0 L90 210 L10 420" stroke="url(#gld1)" stroke-width="2"/>
+        <path d="M55 0 L135 210 L55 420" stroke="url(#gld1)" stroke-width="2" opacity=".7"/>
+        <path d="M100 0 L180 210 L100 420" stroke="url(#gld1)" stroke-width="2" opacity=".45"/>
+        <path d="M145 0 L220 210 L145 420" stroke="url(#gld1)" stroke-width="2" opacity=".25"/>
+        <defs>
+          <linearGradient id="gld1" x1="0" y1="0" x2="0" y2="420" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f6c445"/>
+            <stop offset="1" stop-color="#f6c445" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="hero-chevrons hero-chevrons-right" aria-hidden="true">
+      <svg viewBox="0 0 220 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M210 0 L130 210 L210 420" stroke="url(#gld2)" stroke-width="2"/>
+        <path d="M165 0 L85 210 L165 420" stroke="url(#gld2)" stroke-width="2" opacity=".7"/>
+        <path d="M120 0 L40 210 L120 420" stroke="url(#gld2)" stroke-width="2" opacity=".45"/>
+        <path d="M75 0 L0 210 L75 420" stroke="url(#gld2)" stroke-width="2" opacity=".25"/>
+        <defs>
+          <linearGradient id="gld2" x1="0" y1="0" x2="0" y2="420" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f6c445"/>
+            <stop offset="1" stop-color="#f6c445" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="hero-spotlights" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
     <div class="hero-glow hero-glow-1"></div>
     <div class="hero-glow hero-glow-2"></div>
-    <div class="hero-beams" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
 
     <div class="hero-inner">
       <div class="hero-photo-wrap">
         <div class="hero-photo-glow" aria-hidden="true"></div>
         <img src="assets/meli-hero-trim.png" alt="Meli" class="hero-photo">
-        <div class="hero-badge-pill">
-          <span class="dot"></span> EN VIVO · 26 DE NOVIEMBRE
-        </div>
       </div>
 
-      <p class="eyebrow">✦ Clase en vivo · Gratis</p>
+      <div class="hero-wordmark">
+        <span class="hero-wordmark-main">MELI</span>
+        <span class="hero-wordmark-sub">Clase en vivo · 2026</span>
+      </div>
+
+      <div class="hero-badge-pill">
+        <span class="dot"></span> EN VIVO: <strong>26 DE NOVIEMBRE · 7:00 PM</strong>
+      </div>
+
       <h1 class="hero-title">
-        Únete a la Clase en Vivo: <span class="grad-text">Te Reto a Lanzar</span> tu Primer Negocio Digital con <span class="grad-text">IA</span>
+        Únete a la Clase en Vivo: Te Reto a <span class="grad-text">Lanzar</span> tu Primer Negocio Digital
+        con <span class="grad-text swoosh">IA</span>
       </h1>
       <p class="hero-sub">
         Antes necesitabas programadores. Hoy se lo pides a la IA. En una clase en vivo te muestro cómo crear
         y vender tu primer producto digital usando <strong>Claude Code</strong> y <strong>vibe coding</strong>.
       </p>
 
-      <p class="hero-date">📅 Jueves 26 de noviembre · 7:00 PM (hora Colombia)</p>
-
       <a href="https://chat.whatsapp.com/JxA8DHtUCj11N8PipcfjtS" target="_blank" rel="noopener" class="btn-cta">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-          <path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.12-2.9-6.98A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.22 0 4.3.87 5.87 2.44a8.23 8.23 0 0 1 2.43 5.86c0 4.56-3.71 8.27-8.3 8.27a8.3 8.3 0 0 1-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.4c0-4.56 3.71-8.27 8.27-8.27zm-4.5 4.7c-.17 0-.45.06-.68.32-.23.26-.9.87-.9 2.13 0 1.25.92 2.46 1.05 2.63.13.17 1.8 2.86 4.45 3.9 2.2.86 2.65.69 3.13.65.48-.04 1.56-.63 1.78-1.25.22-.61.22-1.13.15-1.24-.06-.1-.23-.17-.48-.3-.26-.13-1.56-.77-1.8-.86-.24-.09-.42-.13-.6.13-.17.26-.68.86-.84 1.04-.15.17-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.3-.78-.69-1.3-1.55-1.46-1.81-.15-.26-.02-.4.11-.53.12-.12.26-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.6-1.47-.84-2-.21-.5-.43-.44-.6-.44h-.5z"/>
-        </svg>
-        Unirme al grupo de WhatsApp
+        <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
       </a>
 
       <div class="trust-row">
-        <span>🙈 Sin mostrar tu cara</span>
+        <span>😳 Sin mostrar tu cara</span>
         <span>💼 Sin experiencia previa</span>
-        <span>🎁 100% gratis</span>
       </div>
     </div>
   </header>
@@ -121,7 +151,7 @@
         la persona indicada para enseñarte a crear tu negocio digital con IA.]
       </p>
       <a href="https://chat.whatsapp.com/JxA8DHtUCj11N8PipcfjtS" target="_blank" rel="noopener" class="btn-cta btn-cta-outline">
-        Quiero unirme a la clase
+        <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
       </a>
     </div>
   </section>
@@ -133,10 +163,7 @@
     <h2 class="section-title">¿List@ para dar el primer paso?</h2>
     <p class="section-sub">Cupos limitados al grupo de WhatsApp. Jueves 26 de noviembre · 7:00 PM hora Colombia.</p>
     <a href="https://chat.whatsapp.com/JxA8DHtUCj11N8PipcfjtS" target="_blank" rel="noopener" class="btn-cta btn-cta-lg">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-        <path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.12-2.9-6.98A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.22 0 4.3.87 5.87 2.44a8.23 8.23 0 0 1 2.43 5.86c0 4.56-3.71 8.27-8.3 8.27a8.3 8.3 0 0 1-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.4c0-4.56 3.71-8.27 8.27-8.27zm-4.5 4.7c-.17 0-.45.06-.68.32-.23.26-.9.87-.9 2.13 0 1.25.92 2.46 1.05 2.63.13.17 1.8 2.86 4.45 3.9 2.2.86 2.65.69 3.13.65.48-.04 1.56-.63 1.78-1.25.22-.61.22-1.13.15-1.24-.06-.1-.23-.17-.48-.3-.26-.13-1.56-.77-1.8-.86-.24-.09-.42-.13-.6.13-.17.26-.68.86-.84 1.04-.15.17-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.3-.78-.69-1.3-1.55-1.46-1.81-.15-.26-.02-.4.11-.53.12-.12.26-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.6-1.47-.84-2-.21-.5-.43-.44-.6-.44h-.5z"/>
-      </svg>
-      Unirme al grupo de WhatsApp
+      <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
     </a>
   </section>
 
