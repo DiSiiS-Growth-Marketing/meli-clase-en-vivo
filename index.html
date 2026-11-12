@@ -173,7 +173,7 @@
         [PLACEHOLDER: agrega aquí la historia de Meli — quién es, qué resultados ha logrado y por qué es
         la persona indicada para enseñarte a crear tu negocio digital con IA.]
       </p>
-      <a href="#hero-signup-card" class="btn-cta btn-cta-outline">
+      <a href="#" class="btn-cta btn-cta-outline" data-open-signup>
         <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
       </a>
     </div>
@@ -185,7 +185,7 @@
     <p class="section-eyebrow">ÚLTIMO PASO</p>
     <h2 class="section-title">¿List@ para dar el primer paso?</h2>
     <p class="section-sub">Cupos limitados a la clase en vivo. Jueves 26 de noviembre · 7:00 PM hora Colombia.</p>
-    <a href="#hero-signup-card" class="btn-cta btn-cta-lg">
+    <a href="#" class="btn-cta btn-cta-lg" data-open-signup>
       <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
     </a>
   </section>
@@ -199,6 +199,28 @@
     </p>
     <p class="footer-copy">© 2026 Meli López. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- SIGNUP MODAL (opened by any secondary CTA) -->
+  <div class="modal-overlay" id="signup-modal">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" aria-label="Cerrar">&times;</button>
+      <p class="section-eyebrow" id="modal-title">RESERVA TU CUPO</p>
+      <form method="post" action="https://systeme.io/embedded/46632346/subscription" class="signup-form">
+        <div class="form-row">
+          <input type="text" name="surname" placeholder="Tu nombre" required class="form-input">
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required class="form-input">
+        </div>
+        <div class="f-row">
+          <button type="submit" class="btn btn-cta">
+            <span class="btn-cta-label">QUIERO RESERVAR MI CUPO</span>
+          </button>
+        </div>
+      </form>
+      <p class="signup-disclaimer">🔒 Sin spam. Solo el acceso a la clase.</p>
+    </div>
+  </div>
 
 <script src="script.js"></script>
 </body>

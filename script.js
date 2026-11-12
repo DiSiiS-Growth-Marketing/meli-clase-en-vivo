@@ -32,18 +32,48 @@ function updateCountdown(){
 updateCountdown();
 setInterval(updateCountdown, 1000 * 30);
 
-// Submit the signup form in the background, then always go to /gracias.
-const signupForm = document.querySelector(".signup-form");
-if (signupForm) {
-  signupForm.addEventListener("submit", (e) => {
+// Submit any signup form (hero or modal) in the background, then always go to /gracias.
+document.querySelectorAll(".signup-form").forEach((form) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const params = new URLSearchParams(new FormData(signupForm));
-    fetch(signupForm.action, {
+    const params = new URLSearchParams(new FormData(form));
+    fetch(form.action, {
       method: "POST",
       mode: "no-cors",
       keepalive: true,
       body: params,
     });
     window.location.href = "/gracias";
+  });
+});
+
+// Secondary CTAs (about section, final CTA) open the signup modal instead of
+// jumping to the hero form.
+const signupModal = document.getElementById("signup-modal");
+if (signupModal) {
+  const openModal = () => {
+    signupModal.classList.add("is-open");
+    document.body.classList.add("modal-open");
+  };
+  const closeModal = () => {
+    signupModal.classList.remove("is-open");
+    document.body.classList.remove("modal-open");
+  };
+
+  document.querySelectorAll("[data-open-signup]").forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  signupModal.querySelector(".modal-close").addEventListener("click", closeModal);
+
+  signupModal.addEventListener("click", (e) => {
+    if (e.target === signupModal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
   });
 }
