@@ -392,6 +392,57 @@ img{max-width:100%; display:block;}
   min-width:26px;
 }
 
+/* ---------- Signup form ---------- */
+.signup-section{
+  padding: 10px 20px 80px;
+  background: var(--bg);
+}
+.signup-card{
+  max-width:560px;
+  margin: 0 auto;
+  background: linear-gradient(160deg, var(--purple-800), var(--purple-900));
+  border:1px solid var(--gold-border);
+  border-radius:26px;
+  padding: 44px 36px;
+  text-align:center;
+  box-shadow: 0 24px 54px rgba(0,0,0,.4);
+}
+.signup-form{
+  margin-top: 26px;
+  display:flex; flex-direction:column; gap:14px;
+}
+.form-row{width:100%;}
+.form-input{
+  width:100%;
+  background: var(--bg-2);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px 18px;
+  color:var(--text);
+  font-family:var(--font-body);
+  font-size:.96rem;
+  outline:none;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.form-input::placeholder{color:var(--text-dim);}
+.form-input:focus{
+  border-color:var(--gold-2);
+  box-shadow: 0 0 0 3px rgba(246,196,69,.18);
+}
+.f-row{margin-top:6px;}
+.f-row .btn-cta{
+  margin-top:0;
+  width:100%;
+  border:none;
+  cursor:pointer;
+  font-family:var(--font-body);
+}
+.signup-disclaimer{
+  margin-top:18px;
+  color:var(--text-dim);
+  font-size:.78rem;
+}
+
 /* ---------- About section ---------- */
 .about-section{
   max-width:980px;
@@ -472,4 +523,5 @@ img{max-width:100%; display:block;}
   .hero-photo{width:190px;}
   .trust-row{gap:8px 14px; font-size:.78rem;}
   .hero-chevrons{display:none;}
+  .signup-card{padding:32px 20px;}
 }
