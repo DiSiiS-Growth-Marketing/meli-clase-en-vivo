@@ -76,14 +76,14 @@ img{max-width:100%; display:block;}
   -webkit-mask-image: radial-gradient(ellipse at 50% 20%, black 0%, transparent 72%);
 }
 .hero-top-hatch{
-  position:absolute; top:0; left:0; right:0; height:46px; z-index:0; pointer-events:none;
+  position:absolute; top:34px; left:0; right:0; height:40px; z-index:0; pointer-events:none;
   background-image:
-    linear-gradient(45deg, rgba(246,196,69,.22) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(246,196,69,.22) 25%, transparent 25%);
+    linear-gradient(45deg, rgba(246,196,69,.16) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(246,196,69,.16) 25%, transparent 25%);
   background-size: 22px 22px;
   background-position: 0 0, 0 0;
-  mask-image: linear-gradient(to bottom, black, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 40%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 40%, transparent);
 }
 
 .hero-chevrons{
@@ -193,9 +193,9 @@ img{max-width:100%; display:block;}
 
 .hero-title{
   font-family:var(--font-head);
-  font-size: clamp(1.9rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
   font-weight:800;
-  line-height:1.08;
+  line-height:1.12;
   letter-spacing:-0.015em;
   margin-top:20px;
 }
@@ -233,14 +233,13 @@ img{max-width:100%; display:block;}
   border-radius:999px;
   text-decoration:none;
   border-bottom: 4px solid var(--gold-4);
-  box-shadow: 0 14px 30px rgba(246,196,69,.35), inset 0 1px 0 rgba(255,255,255,.6);
+  box-shadow: 0 6px 16px rgba(0,0,0,.3);
   transition: transform .18s ease, box-shadow .18s ease;
-  animation: btnPulse 4s ease-in-out infinite;
 }
 .btn-cta-label{position:relative; z-index:2;}
 .btn-cta:hover{
   transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(246,196,69,.5), inset 0 1px 0 rgba(255,255,255,.7);
+  box-shadow: 0 10px 22px rgba(0,0,0,.35);
 }
 .btn-cta-lg{font-size:1.1rem; padding:21px 44px;}
 .btn-cta-outline{
@@ -249,22 +248,10 @@ img{max-width:100%; display:block;}
   border-bottom: 1.5px solid var(--gold-2);
   color:var(--gold-1);
   box-shadow:none;
-  animation:none;
 }
 .btn-cta-outline:hover{
   background: rgba(246,196,69,.1);
   box-shadow:none;
-}
-
-@keyframes btnPulse{
-  0%, 82%, 100%{
-    box-shadow: 0 14px 30px rgba(246,196,69,.35), inset 0 1px 0 rgba(255,255,255,.6);
-    filter: brightness(1);
-  }
-  90%{
-    box-shadow: 0 14px 44px rgba(246,196,69,.75), 0 0 0 9px rgba(246,196,69,.16), inset 0 1px 0 rgba(255,255,255,.7);
-    filter: brightness(1.18);
-  }
 }
 
 .trust-row{
@@ -564,7 +551,7 @@ img{max-width:100%; display:block;}
   .hero-photo{width:130px;}
   .hero-photo-glow{width:170px; height:170px;}
   .hero-wordmark{margin-top:0;}
-  .hero-title{margin-top:10px; font-size:clamp(1.3rem, 6.5vw, 1.7rem);}
+  .hero-title{margin-top:10px; font-size:clamp(1.15rem, 5.5vw, 1.4rem);}
   .hero-sub{display:none;}
   .hero-signup-card{margin-top:12px; padding:14px 14px 16px;}
   .signup-form{gap:8px;}
@@ -581,7 +568,7 @@ img{max-width:100%; display:block;}
 @media (max-width: 380px){
   .hero-photo{width:92px;}
   .hero-photo-glow{width:130px; height:130px;}
-  .hero-title{font-size:clamp(1.15rem, 6.5vw, 1.4rem); margin-top:8px;}
+  .hero-title{font-size:clamp(1rem, 5.5vw, 1.15rem); margin-top:8px;}
   .hero-wordmark-main{font-size:1.25rem;}
   .hero-signup-card{margin-top:10px;}
 }
