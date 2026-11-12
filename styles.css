@@ -169,6 +169,16 @@ img{max-width:100%; display:block;}
   color: var(--lilac-soft);
 }
 
+/* Mobile: wordmark overlaps the bottom of the photo instead of sitting below it */
+.hero-wordmark-static{display:none;}
+.hero-wordmark-overlay{
+  position:absolute;
+  left:0; right:0; bottom:10px;
+  z-index:3;
+  margin-top:0;
+  text-shadow: 0 2px 10px rgba(0,0,0,.6);
+}
+
 .hero-badge-pill{
   position:relative;
   z-index:2;
@@ -451,6 +461,8 @@ img{max-width:100%; display:block;}
   .hero-photo{width:380px;}
   .hero-photo-glow{width:340px; height:340px;}
   .hero-wordmark{align-items:flex-start;}
+  .hero-wordmark-overlay{display:none;}
+  .hero-wordmark-static{display:flex;}
   .hero-badge-pill{margin:14px 0 0;}
   .hero-title{margin:20px 0 0;}
   .hero-sub{margin:20px 0 0; text-align:left;}
@@ -544,12 +556,16 @@ img{max-width:100%; display:block;}
   .about-bio{text-align:left;}
   .hero-chevrons{width:140px;}
 
-  /* Keep the hero compact so the form is visible without scrolling:
-     photo stays small up top, subtitle is dropped, everything else tightens up. */
+  /* Big photo with the wordmark overlapping its faded bottom edge;
+     subtitle is dropped and spacing stays tight so the form sits close by. */
   .hero{padding:22px 16px 32px;}
-  .hero-inner{gap:14px;}
-  .hero-photo{width:130px;}
-  .hero-photo-glow{width:170px; height:170px;}
+  .hero-inner{gap:10px;}
+  .hero-photo{
+    width:280px;
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 92%);
+    mask-image: linear-gradient(to bottom, black 55%, transparent 92%);
+  }
+  .hero-photo-glow{width:300px; height:300px;}
   .hero-wordmark{margin-top:0;}
   .hero-title{margin-top:10px; font-size:clamp(1.15rem, 5.5vw, 1.4rem);}
   .hero-sub{display:none;}
@@ -560,14 +576,14 @@ img{max-width:100%; display:block;}
   .trust-row{margin-top:10px; font-size:.76rem; gap:6px 12px;}
 }
 @media (max-width: 420px){
-  .hero-photo{width:110px;}
-  .hero-photo-glow{width:150px; height:150px;}
+  .hero-photo{width:240px;}
+  .hero-photo-glow{width:260px; height:260px;}
   .hero-chevrons{display:none;}
   .hero-signup-card{padding:12px 12px 14px;}
 }
 @media (max-width: 380px){
-  .hero-photo{width:92px;}
-  .hero-photo-glow{width:130px; height:130px;}
+  .hero-photo{width:215px;}
+  .hero-photo-glow{width:235px; height:235px;}
   .hero-title{font-size:clamp(1rem, 5.5vw, 1.15rem); margin-top:8px;}
   .hero-wordmark-main{font-size:1.25rem;}
   .hero-signup-card{margin-top:10px;}
