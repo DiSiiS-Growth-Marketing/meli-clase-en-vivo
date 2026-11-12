@@ -51,3 +51,19 @@ if (heroSignup) {
     if (e.key === "Escape") heroSignup.classList.remove("is-open");
   });
 }
+
+// Submit the signup form in the background, then always go to /gracias.
+const signupForm = document.querySelector(".signup-form");
+if (signupForm) {
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const params = new URLSearchParams(new FormData(signupForm));
+    fetch(signupForm.action, {
+      method: "POST",
+      mode: "no-cors",
+      keepalive: true,
+      body: params,
+    });
+    window.location.href = "/gracias";
+  });
+}
