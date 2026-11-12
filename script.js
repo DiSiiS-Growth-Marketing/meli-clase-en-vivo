@@ -31,3 +31,23 @@ function updateCountdown(){
 
 updateCountdown();
 setInterval(updateCountdown, 1000 * 30);
+
+// Hero signup: inline on mobile, popup modal on desktop (CSS controls which via breakpoint)
+const openSignupBtn = document.getElementById("open-signup");
+const heroSignup = document.getElementById("hero-signup");
+const closeSignupBtn = document.getElementById("close-signup");
+
+if (openSignupBtn && heroSignup) {
+  openSignupBtn.addEventListener("click", () => heroSignup.classList.add("is-open"));
+}
+if (closeSignupBtn && heroSignup) {
+  closeSignupBtn.addEventListener("click", () => heroSignup.classList.remove("is-open"));
+}
+if (heroSignup) {
+  heroSignup.addEventListener("click", (e) => {
+    if (e.target === heroSignup) heroSignup.classList.remove("is-open");
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") heroSignup.classList.remove("is-open");
+  });
+}
