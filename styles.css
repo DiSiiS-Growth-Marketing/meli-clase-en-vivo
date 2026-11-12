@@ -44,14 +44,15 @@ img{max-width:100%; display:block;}
 }
 .topbar-timer{display:flex; gap:8px;}
 .timer-box{
-  background: var(--purple-900);
+  background: var(--gold-4);
+  border:1px solid rgba(255,255,255,.25);
   border-radius:8px;
   padding: 4px 10px;
   min-width:48px;
   text-align:center;
 }
-.timer-box span{display:block; font-family:var(--font-head); font-weight:800; font-size:1.1rem; color:var(--gold-1);}
-.timer-box small{font-size:.6rem; letter-spacing:.08em; color:var(--lilac-soft);}
+.timer-box span{display:block; font-family:var(--font-head); font-weight:800; font-size:1.1rem; color:#fff;}
+.timer-box small{font-size:.6rem; letter-spacing:.08em; color:var(--gold-1);}
 
 /* ---------- Hero ---------- */
 .hero{
