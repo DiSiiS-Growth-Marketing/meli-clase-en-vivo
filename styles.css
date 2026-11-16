@@ -40,7 +40,7 @@ img{max-width:100%; display:block;}
   text-align:center;
 }
 .topbar-label{
-  font-weight:700; font-size:.85rem; color:#2b1a05; letter-spacing:.02em;
+  font-weight:800; font-size:1.05rem; color:#2b1a05; letter-spacing:.02em;
 }
 .topbar-timer{display:flex; gap:8px;}
 .timer-box{
@@ -189,13 +189,14 @@ img{max-width:100%; display:block;}
   z-index:2;
   width:fit-content;
   margin: 14px auto 0;
-  white-space:nowrap;
   background: var(--bg-2);
   border:1px solid var(--gold-border);
   color: var(--gold-1);
   font-size:.74rem; font-weight:700; letter-spacing:.03em;
-  padding:7px 16px; border-radius:999px;
-  display:flex; align-items:center; gap:7px;
+  line-height:1.5;
+  padding:9px 18px; border-radius:16px;
+  display:flex; align-items:flex-start; gap:8px;
+  text-align:left;
   box-shadow: 0 4px 18px rgba(0,0,0,.4);
 }
 .hero-badge-pill strong{color:#fff; font-weight:800;}
@@ -204,6 +205,7 @@ img{max-width:100%; display:block;}
   box-shadow:0 0 8px #ff3b3b;
   animation: pulse 1.4s infinite;
   flex-shrink:0;
+  margin-top:5px;
 }
 
 .hero-title{
@@ -467,6 +469,7 @@ img{max-width:100%; display:block;}
 
 /* Desktop: two-column hero — copy + form on the left, photo on the right */
 @media (min-width:761px){
+  .topbar-label{font-size:1.25rem;}
   .hero{text-align:left;}
   .hero-inner{
     max-width:1120px;
