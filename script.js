@@ -43,6 +43,7 @@ document.querySelectorAll(".signup-form").forEach((form) => {
       keepalive: true,
       body: params,
     });
+    if (typeof fbq === "function") fbq("track", "Lead");
     window.location.href = "/gracias";
   });
 });
