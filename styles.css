@@ -189,14 +189,13 @@ img{max-width:100%; display:block;}
   z-index:2;
   width:fit-content;
   margin: 14px auto 0;
+  white-space:nowrap;
   background: var(--bg-2);
   border:1px solid var(--gold-border);
   color: var(--gold-1);
   font-size:.74rem; font-weight:700; letter-spacing:.03em;
-  line-height:1.5;
-  padding:9px 18px; border-radius:16px;
-  display:flex; align-items:flex-start; gap:8px;
-  text-align:left;
+  padding:7px 16px; border-radius:999px;
+  display:flex; align-items:center; gap:7px;
   box-shadow: 0 4px 18px rgba(0,0,0,.4);
 }
 .hero-badge-pill strong{color:#fff; font-weight:800;}
@@ -720,6 +719,13 @@ body.modal-open{overflow:hidden;}
 
 .gracias-btn{width:100%; max-width:420px;}
 
+.gracias-badge{
+  display:block;
+  width:200px;
+  height:auto;
+  margin:26px auto 6px;
+  mix-blend-mode:screen;
+}
 .whatsapp-hands{
   display:flex; justify-content:center; gap:18px;
   margin-bottom:10px;
