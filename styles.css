@@ -44,15 +44,15 @@ img{max-width:100%; display:block;}
 }
 .topbar-timer{display:flex; gap:8px;}
 .timer-box{
-  background: var(--gold-4);
-  border:1px solid rgba(255,255,255,.25);
+  background: var(--purple-900);
+  border:1px solid rgba(196,181,253,.35);
   border-radius:8px;
   padding: 4px 10px;
   min-width:48px;
   text-align:center;
 }
 .timer-box span{display:block; font-family:var(--font-head); font-weight:800; font-size:1.1rem; color:#fff;}
-.timer-box small{font-size:.6rem; letter-spacing:.08em; color:var(--gold-1);}
+.timer-box small{font-size:.6rem; letter-spacing:.08em; color:var(--lilac-soft);}
 
 /* ---------- Hero ---------- */
 .hero{
@@ -168,6 +168,11 @@ img{max-width:100%; display:block;}
   font-size:.7rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
   color: var(--lilac-soft);
 }
+.wordmark-logo{
+  display:block;
+  width:170px;
+  height:auto;
+}
 
 /* Mobile: wordmark overlaps the bottom of the photo instead of sitting below it */
 .hero-wordmark-static{display:none;}
@@ -228,6 +233,12 @@ img{max-width:100%; display:block;}
   margin: 20px auto 0;
 }
 .hero-sub strong{color:var(--lilac-soft);}
+.hero-welcome{
+  margin-top:14px;
+  color:var(--lilac-soft);
+  font-weight:600;
+}
+.hero-welcome strong{color:#fff;}
 
 .btn-cta{
   position:relative;
@@ -264,11 +275,11 @@ img{max-width:100%; display:block;}
   box-shadow:none;
 }
 
-.trust-row{
+.hero-callout{
   margin-top:20px;
-  display:flex; flex-wrap:wrap; justify-content:center; gap:10px 28px;
+  max-width:520px;
   color: var(--text-dim);
-  font-size:.86rem; font-weight:600;
+  font-size:.86rem; font-weight:600; line-height:1.5;
 }
 
 @keyframes pulse{
@@ -376,6 +387,13 @@ img{max-width:100%; display:block;}
   margin-bottom:18px;
   color:var(--lilac-soft);
 }
+.class-list-heading{
+  font-family:var(--font-head);
+  font-weight:800;
+  font-size:1rem;
+  color:var(--gold-2);
+  margin-bottom:8px;
+}
 .class-list{list-style:none;}
 .class-list li{
   display:flex; align-items:flex-start; gap:12px;
@@ -463,6 +481,7 @@ img{max-width:100%; display:block;}
   .hero-wordmark{align-items:flex-start;}
   .hero-wordmark-overlay{display:none;}
   .hero-wordmark-static{display:flex;}
+  .wordmark-logo{width:220px;}
   .hero-badge-pill{margin:14px 0 0;}
   .hero-title{margin:20px 0 0;}
   .hero-sub{margin:20px 0 0; text-align:left;}
@@ -477,7 +496,6 @@ img{max-width:100%; display:block;}
   .signup-form{margin-top:16px; gap:12px;}
   .form-input{padding:15px 18px; font-size:1rem;}
   .f-row{margin-top:6px;}
-  .trust-row{justify-content:flex-start;}
 }
 
 /* ---------- Signup modal (opened by secondary CTAs) ---------- */
@@ -551,6 +569,8 @@ body.modal-open{overflow:hidden;}
   font-size:1rem;
   line-height:1.7;
 }
+.about-bio p{margin:0 0 14px;}
+.about-bio p:last-child{margin-bottom:0;}
 
 /* ---------- Final CTA ---------- */
 .final-cta{
@@ -559,6 +579,13 @@ body.modal-open{overflow:hidden;}
   padding: 80px 20px;
   background: linear-gradient(180deg, var(--bg), var(--purple-900));
   overflow:hidden;
+}
+.final-cta-details{
+  position:relative;
+  display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px;
+  margin: 20px auto 0;
+  color: var(--text-dim);
+  font-size:.9rem; font-weight:600;
 }
 .final-cta .btn-cta{margin-top:26px;}
 
@@ -569,17 +596,11 @@ body.modal-open{overflow:hidden;}
   background: var(--bg);
   border-top:1px solid var(--border);
 }
-.footer-logo{
-  font-family:var(--font-head);
-  font-weight:800;
-  letter-spacing:.06em;
-  color:var(--gold-2);
-}
-.footer-logo span{
-  color:var(--text-dim);
-  font-weight:500;
-  font-size:.78rem;
-  margin-left:8px;
+.footer-logo-img{
+  display:block;
+  width:160px;
+  height:auto;
+  margin:0 auto;
 }
 .footer-disclaimer{
   max-width:560px; margin: 14px auto 10px;
@@ -616,7 +637,7 @@ body.modal-open{overflow:hidden;}
   .signup-form{gap:8px;}
   .form-input{padding:11px 14px; font-size:.88rem;}
   .hero-signup-card .btn-cta{font-size:.84rem; padding:14px 10px; letter-spacing:0;}
-  .trust-row{margin-top:10px; font-size:.76rem; gap:6px 12px;}
+  .hero-callout{margin-top:10px; font-size:.78rem;}
 }
 @media (max-width: 420px){
   .hero-photo{width:240px;}

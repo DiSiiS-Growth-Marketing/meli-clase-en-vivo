@@ -6,7 +6,8 @@ Sitio estático: `index.html`, `styles.css`, `script.js`, `assets/`.
 
 ## Editar
 
-- **Bio de Meli**: busca el placeholder `[PLACEHOLDER: ...]` en `index.html`, dentro de la sección "¿Quién es Meli?".
+- **Bio de Meli**: edita los párrafos dentro de `.about-bio` en `index.html`, sección "¿Quién es Meli López?".
+- **Logo**: `assets/disiis-logo.webp` (logotipo DiSiiS, usado en el hero y en los footers) y `assets/favicon.png` (ícono de pestaña).
 - **Foto**: reemplaza `assets/meli-hero.png`.
 - **Fecha/hora de la clase**: variable `TARGET_DATE` en `script.js` (formato `YYYY-MM-DDTHH:mm:ss-05:00`).
 - **Link de WhatsApp**: busca y reemplaza la URL `https://chat.whatsapp.com/JxA8DHtUCj11N8PipcfjtS` en `index.html` (sección "about" y "final-cta") y en `gracias.html`.
