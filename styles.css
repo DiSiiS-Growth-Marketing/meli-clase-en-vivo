@@ -485,7 +485,7 @@ img{max-width:100%; display:block;}
   .hero-wordmark-static{display:flex;}
   .wordmark-logo{width:190px;}
   .hero-badge-pill{margin:8px 0 0;}
-  .hero-title{margin:10px 0 0; font-size:clamp(1.4rem, 2.6vw, 1.85rem); line-height:1.16;}
+  .hero-title{margin:10px 0 0; font-size:clamp(1.6rem, 3vw, 2.3rem); line-height:1.15;}
   .hero-sub{margin:10px 0 0; text-align:left; font-size:.94rem;}
   .hero-welcome{margin-top:8px;}
   .hero-signup-card{
