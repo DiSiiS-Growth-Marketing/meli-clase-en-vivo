@@ -478,8 +478,8 @@ img{max-width:100%; display:block;}
   }
   .hero-visual{order:2; justify-content:center;}
   .hero-copy{order:1; align-items:flex-start; text-align:left;}
-  .hero-photo{width:600px;}
-  .hero-photo-glow{width:550px; height:550px;}
+  .hero-photo{width:480px;}
+  .hero-photo-glow{width:440px; height:440px;}
   .hero-wordmark{align-items:flex-start;}
   .hero-wordmark-overlay{display:none;}
   .hero-wordmark-static{display:flex;}
@@ -721,9 +721,9 @@ body.modal-open{overflow:hidden;}
 
 .gracias-badge{
   display:block;
-  width:200px;
+  width:260px;
   height:auto;
-  margin:26px auto 6px;
+  margin:4px auto 20px;
   mix-blend-mode:screen;
 }
 .whatsapp-hands{
