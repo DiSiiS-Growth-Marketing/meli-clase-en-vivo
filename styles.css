@@ -681,7 +681,7 @@ body.modal-open{overflow:hidden;}
   mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
-.gracias-inner{position:relative; z-index:1; max-width:560px; width:100%; text-align:center;}
+.gracias-inner{position:relative; max-width:560px; width:100%; text-align:center;}
 .gracias-grid{display:grid; grid-template-columns:1fr; gap:0;}
 .gracias-visual{order:1; display:flex; justify-content:center;}
 .gracias-copy{order:2; display:flex; flex-direction:column; align-items:center; text-align:center;}
@@ -801,6 +801,18 @@ body.modal-open{overflow:hidden;}
 .note-icon{font-size:1.1rem; flex-shrink:0;}
 .note-warning{border-color:var(--gold-border); background:rgba(246,196,69,.06);}
 .note-warning strong{color:var(--gold-1);}
+
+/* Mobile: compact stack so the WhatsApp button is visible without scrolling */
+@media (max-width:619px){
+  .gracias-main{padding:28px 20px 50px;}
+  .gracias-badge{width:170px; margin:0 auto 12px;}
+  .steps-row{margin-bottom:16px;}
+  .gracias-title{font-size:clamp(1.3rem, 6vw, 1.6rem); line-height:1.18;}
+  .progress-bar{margin:10px auto 14px;}
+  .gracias-sub{font-size:.88rem; margin:0 auto 16px; max-width:360px;}
+  .whatsapp-hands{margin-bottom:6px; font-size:1.3rem; gap:14px;}
+  .gracias-btn{margin-top:14px;}
+}
 
 /* Desktop: two wide columns — text on the left, image on the right */
 @media (min-width:880px){
