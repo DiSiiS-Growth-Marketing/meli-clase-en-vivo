@@ -472,15 +472,15 @@ img{max-width:100%; display:block;}
   .topbar-label{font-size:1.25rem;}
   .hero{text-align:left;}
   .hero-inner{
-    max-width:1120px;
-    grid-template-columns: 1fr 1fr;
+    max-width:1360px;
+    grid-template-columns: 11fr 10fr;
     align-items:center;
-    gap:56px;
+    gap:60px;
   }
   .hero-visual{order:2; justify-content:center;}
   .hero-copy{order:1; align-items:flex-start; text-align:left;}
-  .hero-photo{width:380px;}
-  .hero-photo-glow{width:340px; height:340px;}
+  .hero-photo{width:600px;}
+  .hero-photo-glow{width:550px; height:550px;}
   .hero-wordmark{align-items:flex-start;}
   .hero-wordmark-overlay{display:none;}
   .hero-wordmark-static{display:flex;}
