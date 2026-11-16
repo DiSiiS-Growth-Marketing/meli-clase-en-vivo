@@ -29,9 +29,10 @@ fbq('track', 'PageView');
 </head>
 <body>
 
-  <div class="warning-bar">⚠️ NO CIERRES NI REFRESQUES ESTA PÁGINA</div>
+  <div class="warning-bar">¡NO CIERRES NI REFRESQUES ESTA PÁGINA!</div>
 
   <main class="gracias-main">
+    <div class="hero-texture"></div>
     <div class="gracias-inner">
       <div class="gracias-grid">
 
@@ -47,7 +48,7 @@ fbq('track', 'PageView');
             <div class="step active"><span class="step-dot">2</span><span>Grupo de WhatsApp</span></div>
           </div>
 
-          <h1 class="gracias-title">Ya casi estás dentro.<br><span class="grad-text">Te falta un paso.</span></h1>
+          <h1 class="gracias-title" id="gracias-title">Ya casi estás dentro. <span class="grad-text">Te falta un paso: únete al grupo.</span></h1>
 
           <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
           <p class="progress-label">90%</p>
@@ -89,5 +90,13 @@ fbq('track', 'PageView');
     <p class="footer-copy">© 2026 Meli López. Todos los derechos reservados.</p>
   </footer>
 
+  <script>
+    const graciasTitle = document.getElementById("gracias-title");
+    const firstName = new URLSearchParams(window.location.search).get("name");
+    if (graciasTitle && firstName) {
+      const clean = firstName.trim().toLowerCase().replace(/^./, (c) => c.toUpperCase());
+      graciasTitle.innerHTML = `${clean}, ya casi estás dentro. <span class="grad-text">Te falta un paso: únete al grupo.</span>`;
+    }
+  </script>
 </body>
 </html>

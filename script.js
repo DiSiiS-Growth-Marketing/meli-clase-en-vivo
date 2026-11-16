@@ -44,7 +44,9 @@ document.querySelectorAll(".signup-form").forEach((form) => {
       body: params,
     });
     if (typeof fbq === "function") fbq("track", "Lead");
-    window.location.href = "/gracias";
+    const firstName = (params.get("surname") || "").trim().split(/\s+/)[0] || "";
+    const redirect = firstName ? `/gracias?name=${encodeURIComponent(firstName)}` : "/gracias";
+    window.location.href = redirect;
   });
 });
 
