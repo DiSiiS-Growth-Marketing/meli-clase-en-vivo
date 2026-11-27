@@ -13,6 +13,7 @@ Sitio estático: `index.html`, `styles.css`, `script.js`, `assets/`.
 - **Link de WhatsApp**: busca y reemplaza la URL `https://chat.whatsapp.com/JxA8DHtUCj11N8PipcfjtS` en `index.html` (sección "about" y "final-cta") y en `gracias.html`.
 - **Formulario de registro (Systeme.io)**: vive dentro del hero de `index.html` (`#hero-signup`). En móvil se ve inline, sin necesidad de scroll; en escritorio el botón "QUIERO RESERVAR MI CUPO" lo abre como popup (lógica en `script.js`).
 - **Página de gracias**: `gracias.html`, pensada como página de redirección de Systeme.io tras enviar el formulario (último paso: unirse al grupo de WhatsApp). Se publica en `/gracias` gracias a `cleanUrls` en `vercel.json`.
+- **Página de repetición**: `replay.html`, con el video de Loom de la clase embebido y un CTA al grupo de WhatsApp. Se publica en `/replay`. Para cambiar el video, reemplaza el id de Loom en el `src` del `iframe` dentro de `.replay-video`.
 
 ## Deploy en Vercel
 
