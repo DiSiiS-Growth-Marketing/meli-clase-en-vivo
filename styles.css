@@ -863,6 +863,7 @@ body.modal-open{overflow:hidden;}
   display:flex; flex-direction:column; align-items:center; gap:4px;
   margin-bottom:22px;
 }
+.replay-wordmark .wordmark-logo{width:110px;}
 
 .replay-title{
   font-family:var(--font-head);
@@ -958,6 +959,7 @@ body.modal-open{overflow:hidden;}
 @media (max-width:620px){
   .replay-topbar{font-size:.68rem; padding:8px 12px;}
   .replay-main{padding:40px 16px 50px;}
+  .replay-wordmark .wordmark-logo{width:90px;}
   .replay-points{grid-template-columns:1fr;}
   .replay-cta-card{padding:28px 20px 30px;}
 }
